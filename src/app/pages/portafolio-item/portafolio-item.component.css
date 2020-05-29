@@ -1,0 +1,26 @@
+.icon-bubble{
+    height: 100px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 30px 15px 25px 15px;
+    background-color: #E6D5CF;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.icon-bubble i{
+    font-size: 40px;
+}
+
+.icon-bubble span{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.top-50{
+    margin-top: 50px;
+}

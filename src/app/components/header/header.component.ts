@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoGeneralService } from '../../services/info-general.service';
+import { ProyectoService } from '../../services/proyecto.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public infoService: InfoGeneralService,
+              private proyectoService: ProyectoService) { }
 
   ngOnInit() {
+  }
+
+  buscame(evento){
+    this.proyectoService.txtBusqueda = evento.target.value
   }
 
 }

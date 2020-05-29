@@ -6,19 +6,29 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PortafolioItemComponent } from './pages/portafolio-item/portafolio-item.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FiltroPipe } from './pipes/filtro.pipe'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    AboutComponent,
+    PortafolioItemComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [FiltroPipe]
 })
 export class AppModule { }

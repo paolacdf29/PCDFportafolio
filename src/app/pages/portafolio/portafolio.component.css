@@ -1,0 +1,10 @@
+svg path,
+svg rect{
+  fill: black;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

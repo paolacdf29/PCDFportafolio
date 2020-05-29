@@ -1,0 +1,98 @@
+
+<div>
+    <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+        <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+            <h2 class="rk-portfolio-inner-title ">{{proyectService.currentProyect.nombre}}</h2>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+            <p class="rk-portfolio-inner-client "><span class="ae-lambda">Tipo de proyecto: </span><span class="ae-u-bolder">{{proyectService.currentProyect.tipo}}</span></p>
+            <p class="au-underline rk-portfolio-inner-website "><a target='_blank' href="{{proyectService.currentProyect.url}}" class="ae-kappa">{{proyectService.currentProyect.url}}</a></p>
+        </div>
+    </div>
+</div>
+<div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+        <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+            <h4 class="ae-u-bolder">Descripcion</h4>
+            <p class="ae-eta">{{proyectService.currentProyect.descripcion}} </p>
+        </div>
+        <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+            <img src="{{proyectService.currentProyect.img2}}" alt="{{proyectService.currentProyect.nombre}}">
+        </div>
+    </div>
+
+    <div class="ae-grid ae-grid--collapse top-50">
+        <div class="ae-grid__item item-lg-8">
+            <img src="{{proyectService.currentProyect.img}}" alt="{{proyectService.currentProyect.nombre}}">
+        </div>
+
+        <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+
+            <p class="ae-u-bolder">Links de interes</p>
+    
+            <a href='{{proyectService.currentProyect.url}}' target='_blank'>
+                <div class="icon-bubble" 
+                     *ngIf='proyectService.currentProyect.tipo=="app"'>
+                    <i class="fas fa-mobile-alt"></i>
+                    <br>
+                    <br>
+                    <span>PWA</span>
+                </div>
+            </a>
+
+            <a href='{{proyectService.currentProyect.url}}' target='_blank'>
+                <div class="icon-bubble" 
+                    *ngIf='proyectService.currentProyect.tipo!="app"'>
+                    <i class="fas fa-pager"></i>
+                    <br>
+                    <br>
+                    <span>Web</span>
+                </div>
+            </a>
+
+            <a href='{{proyectService.currentProyect.repositorio}}' target='_blank'>
+                <div class="icon-bubble">
+                    <i class="fab fa-github "></i>
+                    <br>
+                    <br>
+                    <span>Repositorio</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="ae-grid--alt test top-50">
+        <div class="ae-grid__item--alt item-sm--auto item-sm--offset-1 item-lg--offset-0 item-sm--end item-sm--bottom">
+            <div class="ae-grid ae-grid--alt8 au-xs-ta-center au-sm-ta-left">
+            <div class="ae-grid__item--alt8 item-lg-6">
+
+                <span class="ae-u-boldest">Front-end</span>
+                <p class="au-mt-1">{{proyectService.currentProyect.front}}</p>
+
+                <span class="ae-u-boldest">Back-end</span>
+                <p class="au-mt-1">{{proyectService.currentProyect.back}}</p>
+
+                <span class="ae-u-boldest">Base de datos</span>
+                <p class="au-mt-1">{{proyectService.currentProyect.db}}</p>
+
+            </div>
+            </div>
+        </div>
+        <div class="ae-grid__item--alt item-sm--auto item-lg-3 item-lg--offset-1 item-lg--end">
+            <img src="{{proyectService.currentProyect.img3}}" alt="{{proyectService.currentProyect.nombre}}">
+        </div>
+    </div>
+
+</div>
+
+<div class="ae-container-fluid au-pt-4 au-pb-4">
+    <div class="group-buttons">
+        <a href="#0" class="au-mt-2 arrow-button arrow-button--right">Next Project<span class="arrow-cont">
+        <svg>
+            <use xlink:href="assets/img/symbols.svg#arrow"></use>
+        </svg>
+        </span>
+        </a>
+    </div>
+</div>
