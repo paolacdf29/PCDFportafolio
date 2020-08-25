@@ -31,3 +31,11 @@ export interface person {
     ubicacion:   string;
     img:         string;
 }
+
+export interface plan {
+    nombre:      String;
+    descripcion: String;
+    contenido:   string[];
+    costomes:    number;
+    costoanio:   number;
+}

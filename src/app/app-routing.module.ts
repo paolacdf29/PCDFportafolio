@@ -3,12 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PortafolioItemComponent } from './pages/portafolio-item/portafolio-item.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 
 const routes: Routes = [
   {path: 'home', component: PortafolioComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item', component: PortafolioItemComponent},
+  {path: 'servicios', component: ServiciosComponent},
+  {path: 'contacto', component: ContactoComponent},
   {path: '**', pathMatch: 'full', component: PortafolioComponent}
 ];
 

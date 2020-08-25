@@ -1,0 +1,11 @@
+.info-box{
+    margin: 30px 0 30px 0;
+}
+
+.info-box a i{
+    padding: 20px;
+    font-size: 50px;
+    background-color: #A62648;
+    border-radius: 70%;
+    color: white;
+}

@@ -1,0 +1,59 @@
+[
+    {
+        "nombre": "Plan emprendedor",
+        "contenido": [
+            "Landing page/Single page",
+            "4 paginas de contenido estatico",
+            "Galeria sincronizada con Instagram"
+        ],
+        "costomes": 399,
+        "costoanio": 3990
+    },
+    {
+        "nombre": "Plan E-commerce",
+        "contenido": [
+            "Todo lo del plan emprendedor",
+            "Tienda de productos / Menú de comidas",
+            "2 Banner de promoción / carousel de promoción (en cualquier página)",
+            "Panel de administrador (Agregar/Editar productos, gestionar órdenes, editar datos de la tienda)",
+            "Sistema de pago simple, sin comision (Link de mercadopago, transferencias, QR)"
+
+        ],
+        "costomes": 599,
+        "costoanio": 5990
+    },
+    {
+        "nombre": "Plan E-commerce PRO",
+        "contenido": [
+            "Todo lo del plan E-commerce",
+            "Sistema de gestion de envios (Envios en CABA desde 90 ARS en 24-48Hs",
+            "Blog",
+            "Diseño Web, personalización acorde a la imagen de la marca",
+            "Sistema de pagos integrados (pago automático con tarjeta desde el sitio web)"
+        ],
+        "costomes": 699,
+        "costoanio": 6990
+    },
+    {
+        "nombre": "Plan servicios Pro",
+        "descripcion": "Si ofreces servicios puedes gestionar tus citas a domicilio o en el local con un gestor de citas donde el cliente hace la reserva/solicitud, se agenda para ambas partes con los datos del puntode encuentro, los servicios a realizar, un aprox del costo del servicio y la posibilidad de dejar una seña si se requiere.",
+        "contenido": [
+            "Todo lo del plan emprendedor",
+            "Gestor de citas, Agenda on-line",
+            "2 Banner de promoción / carousel de promoción (en cualquier página)",
+            "Sistema de pago simple, sin comision (Link de mercadopago, transferencias, QR)"
+
+        ],
+        "costomes": 599,
+        "costoanio": 5990
+    },
+    {
+        "nombre": "Plan blogger",
+        "contenido": [
+            "Todo lo del plan emprendedor",
+            "Blog en wordpress"
+        ],
+        "costomes": 399,
+        "costoanio": 3990
+    }
+]

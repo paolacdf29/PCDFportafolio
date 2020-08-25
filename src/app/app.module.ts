@@ -9,7 +9,11 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PortafolioItemComponent } from './pages/portafolio-item/portafolio-item.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FiltroPipe } from './pipes/filtro.pipe'
+import { FiltroPipe } from './pipes/filtro.pipe';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './pages/admin/admin.component';
+import { ContactoComponent } from './pages/contacto/contacto.component'
 
 
 @NgModule({
@@ -20,12 +24,16 @@ import { FiltroPipe } from './pipes/filtro.pipe'
     PortafolioComponent,
     AboutComponent,
     PortafolioItemComponent,
-    FiltroPipe
+    FiltroPipe,
+    ServiciosComponent,
+    AdminComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

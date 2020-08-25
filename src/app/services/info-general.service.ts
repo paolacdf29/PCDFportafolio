@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { infoPagina, proyectos, person } from '../Interfaces/info-gral';
+import { infoPagina, proyectos, person, plan } from '../Interfaces/info-gral';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +29,9 @@ export class InfoGeneralService {
           resolve(resp);
         })
     })
+  }
+
+  getPlanes(){
+    return this.http.get<plan[]>('assets/data/planes.json')
   }
 }
